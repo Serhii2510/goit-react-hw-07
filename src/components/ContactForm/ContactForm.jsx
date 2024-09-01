@@ -16,7 +16,7 @@ const ContactForm = () => {
       .max(50, 'Number is too Long!')
       .matches(
         /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/,
-        'Phone number must match xxx-xx-xx'
+        'Phone number must match xxx-xxx-xxxx'
       )
       .required('Phone number is required'),
   });
@@ -63,7 +63,7 @@ const ContactForm = () => {
             className={css.input}
             type="tel"
             name="number"
-            placeholder="xxx-xx-xx"
+            placeholder="xxx-xxx-xxxx"
           />
           <ErrorMessage className={css.error} name="number" component="span" />
         </label>
